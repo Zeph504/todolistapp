@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+.todo-head img{
+    width:4rem;
+    vertical-align: center;
+}
+.main{
+    width:100%;
+    background-image: url(img/wood.jpg);   
+    min-height: 100vh;
+    padding: 5px;
+}
+
+.container{
+    width:100%;
+    max-width:720px;
+    background: beige;
+    margin: 100px auto;
+    padding:30px 50px;
+    border-radius: 10px;  
+}
+.todo-head{
+    text-align:center;
+}
+
+.todo-head h1{
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-size:5rem;
+}
+
+.todo-task{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 1.5rem;
+}
+
+.todo-task input{
+    padding:1rem 8rem;
+    border-radius:10px;
+}
+
+.todo-task button{
+    padding:1rem 2rem;
+    border-radius:10px;
+    outline:none;
+}
+
+ul li{
+    list-style:none;
+    font-size: 25px;
+    padding:12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;    
+    position:relative;
+    border-bottom: 1px solid black;
+    
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(img/uncheck.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration:line-through;
+}
+
+ul li.checked::before{
+    background-image: url(img/check.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
+
+.underline{
+    border-bottom: 1px solid black;
+}
+
+footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    text-align: center;
+    padding: 20px 0; /* Add some padding to the top and bottom */
+}
+.footer-content {
+    max-width: 960px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+/*font-family: 'Oswald', sans-serif;
+font-family: 'Swanky and Moo Moo', cursive;*/

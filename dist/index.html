@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Swanky+and+Moo+Moo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="todo-head">
+                <h1>To-Do List <img src="img/to-do-list.png" alt=""></h1>
+                <div class="underline"></div>
+            </div>
+            <div class="todo-task">
+                <label for="input-list">
+                    <input type="text" id="input-list" name="input-list" placeholder="type your task">
+                </label>
+                <button onclick="addTask()">Add</button>
+            </div>
+            <div class="todo-list">
+                <ul id="list-container">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> -->
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <a href="https://www.freepik.com/free-photo/natural-wooden-background_5505940.htm#query=wood%20background&position=1&from_view=keyword&track=ais">Image by kbza</a> on Freepik
+            <a href="https://www.flaticon.com/free-icons/to-do" title="to do icons">To do icons created by Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/circle" title="circle icons">Circle icons created by Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/foursquare-check-in" title="foursquare check in icons">Foursquare check in icons created by Pixel perfect - Flaticon</a>
+        </div>
+        
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
